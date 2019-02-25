@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="java">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,
+                                                                  maximum-scale=1.0,user-scalable=no">
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-3.3.7.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="margin-top: 10px">
+                <button class="btn btn-primary" data-toggle="collapse" data-target="#content">详情</button>
+                <div id="content">
+                    内容详情
+                </div>
+            </div>
+            <div class="col-md-6" style="margin-top: 10px">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#one">第1部分</a>
+                        </div>
+                        <div id="one" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                第一部分内容
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#two">第2部分</a>
+                        </div>
+                        <div id="two" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                第二部分内容
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+</html>

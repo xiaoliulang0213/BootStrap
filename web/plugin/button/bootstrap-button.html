@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="java">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,
+                                                                  maximum-scale=1.0,user-scalable=no">
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-3.3.7.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="margin-top: 10px">
+                <button class="btn btn-default" data-loading-text="loading..." type="button">按钮</button>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            $("[type='button']").click(function () {
+                $(this).button('loading').delay(1000).queue(function () {
+
+                });
+            })
+        })
+    </script>
+</html>
